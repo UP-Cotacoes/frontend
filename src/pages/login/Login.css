@@ -6,9 +6,12 @@ body {
 }
 
 #container {
+    min-height: 100vh;
+    min-width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
+    backdrop-filter: blur(5px);
 }
 
 #logo {
@@ -18,11 +21,22 @@ body {
 }
 
 #frame {
+    display: flex;
+    flex-direction: column;
     margin-top: 32px;
     padding: 10px 100px;
     background: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 4px 3px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
-.login-form-field {
-    margin: 32px 0;
+.login-form-field-email {
+    margin: 24px 8px 0;
+}
+
+.login-form-field-password {
+    margin: 24px 8px;
+}
+
+.login-button {
+    align-self: center;
 }

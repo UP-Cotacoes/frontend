@@ -1,0 +1,19 @@
+.elevation-button-container {
+    background: #2066FF;
+    padding: 12px 32px;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 4px 3px 10px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.3s;
+}
+
+.elevation-button-container:hover {
+    cursor: pointer;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.3), 4px 3px 10px 0 rgba(0, 0, 0, 0.29);
+    transition: 0.3s;
+}
+
+.elevation-button-container:active {
+    background: #251eef;
+}
+
