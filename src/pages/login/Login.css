@@ -15,26 +15,26 @@ body {
 }
 
 #logo {
-    max-width: 680px;
-    max-height: 275px;
+    max-width: 24em;
+    max-height: 24em;
     margin-top: 2em;
 }
 
 #frame {
     display: flex;
     flex-direction: column;
-    margin-top: 32px;
-    padding: 10px 100px;
+    margin-top: 2em;
+    padding: 1.2em 4em;
     background: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 4px 3px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
 .login-form-field-email {
-    margin: 24px 8px 0;
+    margin: 2em 0 0;
 }
 
 .login-form-field-password {
-    margin: 24px 8px;
+    margin: 2em 0;
 }
 
 .login-button {

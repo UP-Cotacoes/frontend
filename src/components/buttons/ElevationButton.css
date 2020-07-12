@@ -1,6 +1,6 @@
 .elevation-button-container {
     background: #2066FF;
-    padding: 12px 32px;
+    padding: 1em 2em;
     font-weight: bold;
     color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 4px 3px 10px 0 rgba(0, 0, 0, 0.19);

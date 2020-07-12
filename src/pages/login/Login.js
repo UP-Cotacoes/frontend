@@ -16,6 +16,7 @@ export default function Login() {
                     className={"login-form-field login-form-field-email"}
                     icon={FaUser}
                     placeholder={strings().email_cnpj}
+                    type={'email'}
                 />
 
                 <FormField
