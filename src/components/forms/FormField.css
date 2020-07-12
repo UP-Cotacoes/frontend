@@ -1,0 +1,35 @@
+.form-container {
+    display: flex;
+    background: white;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 4px 3px 10px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.3s;
+}
+
+.form-container:hover {
+    cursor: pointer;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 4px 3px 10px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.3s;
+}
+
+.form-icon {
+    width: 26px;
+    height: 26px;
+    margin: 10px;
+    color: #B7B7B7;
+    transition: 0.3s;
+}
+
+.form-icon-focused {
+    color: #2066FF;
+    transition: 0.3s;
+}
+
+.form-input {
+    border: none;
+    height: 36px;
+}
+
+.form-input:focus {
+    outline: none;
+}
