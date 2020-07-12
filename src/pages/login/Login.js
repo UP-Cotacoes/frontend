@@ -25,10 +25,33 @@ export default function Login() {
                     placeholder={strings().password}
                     type={'password'}/>
 
+                <div id={'login-form-remember-me-container'}>
+                    <input type={'checkbox'}/>
+                    {strings().remember_me}
+                </div>
+
+
                 <ElevationButton
                     className={'login-button'}
                     text={strings().sign_in}
                     upperCase/>
+
+                <button className={'login-form-clickable-text'} onClick={() => console.log('clicked')}>
+                    {strings().forgot_your_password}
+                </button>
+
+                <div className={'login-form-register-container'}>
+                    <div className={'login-form-text'}>
+                        {strings().not_a_member}&nbsp;
+                    </div>
+                    <button className={'login-form-clickable-text'} onClick={() => console.log('clicked')}>
+                        {strings().register}&nbsp;
+                    </button>
+                    <div className={'login-form-text'}>
+                        {strings().make_an_up}
+                    </div>
+
+                </div>
             </div>
         </div>
     )

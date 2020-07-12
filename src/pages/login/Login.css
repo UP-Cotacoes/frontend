@@ -21,10 +21,11 @@ body {
 }
 
 #frame {
+    min-height: 60vh;
     display: flex;
     flex-direction: column;
     margin-top: 2em;
-    padding: 1.2em 4em;
+    padding: 1.2em 3em;
     background: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 4px 3px 10px 0 rgba(0, 0, 0, 0.19);
 }
@@ -34,9 +35,48 @@ body {
 }
 
 .login-form-field-password {
-    margin: 2em 0;
+    margin: 2em 0 1em 0;
 }
 
 .login-button {
     align-self: center;
+    margin-bottom: 1em;;
+}
+
+#login-form-remember-me-container {
+    display: flex;
+    align-items: center;
+    color: #7d7d7d;
+    font-size: 0.8em;
+    padding: .5em 0 1.5em 0;
+}
+
+.login-form-clickable-text {
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.8em;
+    color: #2066FF;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.login-form-clickable-text:hover, :focus {
+    cursor: pointer;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.login-form-text {
+    text-align: center;
+    font-weight: bold;
+    color: #7d7d7d;
+    font-size: 0.8em;
+}
+
+.login-form-register-container {
+    display: flex;
+    flex-direction: row;
 }

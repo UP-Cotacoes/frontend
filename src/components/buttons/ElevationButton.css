@@ -5,9 +5,17 @@
     color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 4px 3px 10px 0 rgba(0, 0, 0, 0.19);
     transition: 0.3s;
+    border: none;
+    outline: none;
 }
 
 .elevation-button-container:hover {
+    cursor: pointer;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.3), 4px 3px 10px 0 rgba(0, 0, 0, 0.29);
+    transition: 0.3s;
+}
+
+.elevation-button-container:focus {
     cursor: pointer;
     box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.3), 4px 3px 10px 0 rgba(0, 0, 0, 0.29);
     transition: 0.3s;
