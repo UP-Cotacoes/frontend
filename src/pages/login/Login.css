@@ -58,6 +58,8 @@ body {
     color: #2066FF;
     cursor: pointer;
     transition: 0.3s;
+    margin: 0;
+    padding: 0;
     border: none;
     outline: none;
     background: none;
