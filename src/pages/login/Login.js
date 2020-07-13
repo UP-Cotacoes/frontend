@@ -3,7 +3,7 @@ import "./Login.css"
 import logo from "../../media/logo_full.png"
 import {strings} from "../../strings";
 import FormField from "../../components/forms/FormField";
-import {FaLock, FaUser} from "react-icons/all";
+import {FaLock, FaUser, FaUserCircle} from "react-icons/all";
 import ElevationButton from "../../components/buttons/ElevationButton";
 
 export default function Login() {
@@ -12,6 +12,8 @@ export default function Login() {
             <img id={"logo"} src={logo} alt={strings().up_cotacoes}/>
 
             <div id={"frame"}>
+                <FaUserCircle className={"login-form-user-icon"}/>
+
                 <FormField
                     className={"login-form-field login-form-field-email"}
                     icon={FaUser}
@@ -41,9 +43,9 @@ export default function Login() {
                 </button>
 
                 <div className={'login-form-register-container'}>
-                    <div className={'login-form-text'}>
+                    <span className={'login-form-text'}>
                         {strings().not_a_member}&nbsp;
-                    </div>
+                    </span>
                     <button className={'login-form-clickable-text'} onClick={() => console.log('clicked')}>
                         {strings().register}&nbsp;
                     </button>
