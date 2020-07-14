@@ -25,8 +25,8 @@ body {
     display: flex;
     border-radius: .2em;
     flex-direction: column;
-    margin-top: 4em;
-    padding: 4.2em 3em;
+    margin-top: 5em;
+    padding: 1.2em 3em;
     background: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 4px 3px 10px 0 rgba(0, 0, 0, 0.19);
 }
@@ -59,6 +59,10 @@ body {
 
 #login-form-remember-me-container > input:hover {
     box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.19);
+    transition: .3s;
+}
+
+#login-form-remember-me-container > input:disabled {
     transition: .3s;
 }
 
@@ -99,10 +103,17 @@ body {
     align-self: center;
     width: 8em;
     height: 8em;
-    position: absolute;
-    top: 12em;
+    position: relative;
+    bottom: 5em;
     background: white;
     padding: .4em;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 4px 3px 10px 0 rgba(0, 0, 0, 0.19);
     border-radius: 8em;
+}
+
+.login-form-frame-content {
+    position: relative;
+    bottom: 5.5em;
+    display: flex;
+    flex-direction: column;
 }

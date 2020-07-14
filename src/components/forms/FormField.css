@@ -34,3 +34,8 @@
 .form-input:focus {
     outline: none;
 }
+
+.form-input:disabled {
+    background: none;
+    transition: .3s;
+}

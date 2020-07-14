@@ -26,3 +26,8 @@
     background: #251eef;
 }
 
+.elevation-button-container:disabled {
+    background: #7d7d7d;
+    transition: .3s;
+}
+

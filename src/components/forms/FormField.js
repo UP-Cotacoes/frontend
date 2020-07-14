@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import './FormField.css'
 
-export default function FormField({className, style, icon, placeholder, type}) {
+export default function FormField({className, style, icon, placeholder, type, onChange, disabled}) {
     const [focused, setFocus] = useState(false)
     let input = undefined;
 
@@ -9,7 +9,9 @@ export default function FormField({className, style, icon, placeholder, type}) {
         <div
             className={`${className} form-container`}
             style={style}
-            onClick={() => {input.focus()}}>
+            onClick={() => {
+                input.focus()
+            }}>
             {icon({className: iconClasses()})}
             <input
                 ref={ref => input = ref}
@@ -18,9 +20,15 @@ export default function FormField({className, style, icon, placeholder, type}) {
                 placeholder={placeholder}
                 onFocus={() => onFocusText()}
                 onBlur={() => onBlurText()}
+                onChange={(event) => onTextChange(event.target.value)}
+                disabled={disabled}
             />
         </div>
     )
+
+    function onTextChange(text) {
+        if (onChange) onChange(text)
+    }
 
     function onFocusText() {
         setFocus(true)
